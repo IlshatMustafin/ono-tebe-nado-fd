@@ -1,1 +1,228 @@
-/* место для вашего кода */
+
+body {
+  background-image: url("/images/pattern.png");
+  background-size: 1100px;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.links {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+.overlay { /*слой темная маска*/
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+/*-------------------------------------------------------------------*/
+.header {
+  display: grid;
+  grid-template-columns: 1fr 138px 1fr;
+  justify-items: start;
+  align-items: center;
+  height: 293px;
+  padding: 46px 50px 50px;
+}
+
+.header-menu-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  font-size: 18px;
+  list-style: circle;
+}
+
+.header-menu-list-untagged {
+    list-style: none; /*Убрал маркер у меню главная*/
+}
+
+.header-logo {
+  border: none;
+  height: 110px;
+}
+
+.header-address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 240px;
+  justify-self: end;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.34;
+  width: auto;
+}
+/*-------------------------------------------------------------------*/
+.cover {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-image: url(/images/cover.jpg);
+  background-size: cover;
+  min-height: 757px;
+  background-position: center;  
+  background-repeat: no-repeat;
+  padding: 165px 50px 50px;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+  z-index: 50;
+}
+
+.aligned-text_left {
+    text-align: left;
+}
+
+.aligned-text_center {
+    margin-right: -30px; /*Убрал лишний letter-spacing*/
+}
+
+.aligned-text_right {
+    text-align: right;
+    margin-right: -30px;
+}
+
+.cover-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 105px;
+    height: 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    word-spacing: 19px;
+    z-index: 51;
+}
+
+.cover-bet-button {
+    height: 50px;
+    width: 255px;
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    background: transparent;
+    border-color: white;
+}
+/*-------------------------------------------------------------------*/
+.lots {
+    margin-top: 180px;
+    height: 723px;
+}
+
+.lots__heading {
+  margin-left: 64px;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  display: flex;
+  list-style: none;
+  padding: 26px 24px 31px;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+  padding: 48px 40px;
+}
+
+.lots__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+  color: white;
+}
+
+.card__title {
+  text-transform: uppercase;
+  border: none;
+  font-weight: 700;
+  font-size: 22px;
+  width: 100%;
+  z-index: 50;
+}
+
+.card__text {
+  font-weight: 400;
+  font-size: 20px;
+  width: 100%;
+  z-index: 50;
+}
+
+.card {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_film {
+  position: relative;
+  background-image: url(/images/card-lot-01.jpg);
+}
+.card_type_book {
+  position: relative;
+  background-image: url(/images/card-lot-02.jpg);
+}
+.card_type_picture {
+  position: relative;
+  background-image: url(/images/card-lot-03.jpg);
+}
+
+.lots__look-more-link {
+  margin-left: 64px;
+  font-weight: 400;
+  font-size: 20px; 
+}
+/*-------------------------------------------------------------------*/
+.about {
+    margin-top: 118px;
+    height: 595px;
+    background-color: red;
+    opacity: 0.7;
+    display: grid;
+    grid-template-columns: 380px 1fr;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.about__logo {
+  padding: ;
+  background-color: blue;
+  align-self: start;
+}
+
+.about__logo-background {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background: red;
+    
+}
+
+/*-------------------------------------------------------------------*/
+.footer {
+    margin-top: 180px;
+    height: 180px;
+    background-color: blue;
+    opacity: 0.8;
+}
