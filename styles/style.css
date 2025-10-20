@@ -199,15 +199,14 @@ body {
     background-color: red;
     opacity: 0.7;
     display: grid;
-    grid-template-columns: 380px 1fr;
+    grid-template-columns: 382px 1fr;
   justify-items: center;
   align-items: center;
 
 }
 
 .about__logo {
-  padding: ;
-  background-color: blue;
+  padding: 37px;
   align-self: start;
 }
 
@@ -215,8 +214,7 @@ body {
     width: 240px;
     height: 240px;
     border-radius: 50%;
-    background: red;
-    
+    background: black;
 }
 
 /*-------------------------------------------------------------------*/
