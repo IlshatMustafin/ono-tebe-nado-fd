@@ -49,7 +49,7 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .cover {
@@ -77,11 +77,11 @@
 }
 
 .aligned-text_left {
-    text-align: left;
+  text-align: left;
 }
 
 .aligned-text_right {
-    text-align: right;
+  text-align: right;
 }
 
 .letter-spacing-extended {
@@ -93,33 +93,33 @@
 }
 
 .cover__description {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 105px;
-    height: 50px;
-    color: white;
-    font-weight: 400;
-    font-size: 22px;
-    text-transform: uppercase;
-    word-spacing: 19px;
-    z-index: 51;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 105px;
+  height: 50px;
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: uppercase;
+  word-spacing: 19px;
+  z-index: 51;
 }
 
 .bet-button {
-    height: 50px;
-    width: 255px;
-    color: white;
-    font-weight: 400;
-    font-size: 22px;
-    text-transform: uppercase;
-    background: transparent;
-    border-color: white;
+  height: 50px;
+  width: 255px;
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: uppercase;
+  background: transparent;
+  border-color: white;
 }
 
 .lots {
-    margin-top: 180px;
-    height: 723px;
+  margin-top: 180px;
+  height: 723px;
 }
 
 .lots__heading {
