@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="fonts/fonts.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="fonts/fonts.css"/>
+    <link rel="stylesheet" href="styles/global.css"/>
+    <link rel="stylesheet" href="styles/style.css"/>
   </head>
   <body>
     <header class="header">
-      <nav class="header-menu">
-        <ul class="header-menu-list">
-          <li class="header-menu-list-untagged">главная</li>
-          <li><a href="#lots" class="links">посмотреть лоты</a></li>
-          <li><a href="#0" class="links">об аукционе</a></li>
+      <nav class="header__menu">
+        <ul class="header__links-list">
+          <li class="header__links-list-item_no-bullit">
+            <a href="#0" class="header__link_active">главная</a>
+          </li>
+          <li class="header__links-list-item">
+            <a href="#lots" class="header__link">посмотреть лоты</a>
+          </li>
+          <li class="header__links-list-item">
+            <a href="#about" class="header__link">об аукционе</a>
+          </li>
         </ul>
       </nav>
-      <a class="header-logo">
-        <img
-          src="images/logo-black.svg"
-          alt="логотип с названием сайта"
-        /></a>
-      <address class="header-address">
-          <a href="tel:+9 999 555 5555" class="links">+9 999 555 5555</a>
-          <a href="mailto:info@sobaka.ge" class="links">info@sobaka.ge</a>
+      <a class="header__logo">
+        <img class="header__logo-image" src="images/logo-black.svg" alt="Логотип сайта"/>
+      </a>
+      <address class="address header__address">
+          <a href="tel:+9 999 555 5555" class="header__link">+9 999 555 5555</a>
+          <a href="mailto:info@sobaka.ge" class="header__link">info@sobaka.ge</a>
           <span>наб. Принсенграхт 263- 265, Амстердам</span>
       </address>
     </header>
@@ -33,13 +37,13 @@
       <section class="cover">
         <div class="overlay"></div>
         <h1 class="cover__title">
-          <span class="aligned-text_left">оно</span>
-          <span class="aligned-text_center">тебе</span>
-          <span class="aligned-text_right">надо</span>
+          <span class="aligned-text_left letter-spacing-extended">оно</span>
+          <span class="aligned-text_center letter-spacing-extended">теб<span class="no-letter-spacing">е</span></span>
+          <span class="aligned-text_right letter-spacing-extended">над<span class="no-letter-spacing">о</span></span>
         </h1>
-        <div class="cover-bottom">
-          <span>аукцион вещей, в которые никто не верил</span>
-          <button class="cover-bet-button">сделать ставку</button>
+        <div class="cover__description">
+          <span class="cover__description-text">аукцион вещей, в которые никто не верил</span>
+          <button class="bet-button">сделать ставку</button>
         </div>
       </section>
       <section class="lots">
@@ -88,16 +92,18 @@
             </article>
           </li>
         </ul>
-        <a href="#0" class="links lots__look-more-link">посотреть больше</a>
+        <a href="#0" class="lots__look-more-link header__link">посмотреть больше</a>
       </section>
-
       <section class="about">
         <div class="about__logo">
-          <div class="about__logo-background"></div>
-          <img class="about__logo-image">
+          <div class="about__logo-background">
+            <img class="about__logo-image"
+            src="images/logo-white.svg"
+            alt="логотип с названием сайта"/>
+          </div>
         </div>
         <div class="about__column">
-          <h2 class="about__title">Об аукционе</h2>
+          <h2 class="about__title" id="about">Об аукционе</h2>
           <div class="about__text">
             <p>Здесь вы не встретите очередное пафосное собрание невероятно 
               дорогого антиквариата. Наши лоты вообще не должны были попасть 
@@ -113,11 +119,44 @@
               эти лоты стали культовыми. </p>
           </div>
         </div>
-
       </section>
     </main>
-
     <footer class="footer">
+      <address class="address footer__address">
+          <a href="tel:+9 999 555 5555" class="header__link">+9 999 555 5555</a>
+          <a href="mailto:info@sobaka.ge" class="header__link">info@sobaka.ge</a>
+          <span>наб. Принсенграхт 263- 265, Амстердам</span>
+      </address>
+      <nav class="footer__menu">
+        <ul class="footer__menu-list header__links-list-item_no-bullit">
+          <li class="footer__menu-list-item">
+            <a href="#0" class="header__link_active">главная</a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a href="#lots" class="header__link">посмотреть лоты</a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a href="#about" class="header__link">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__social-list">
+        <li class="footer__social-list-item">
+          <a href="#0" class="footer__social-link">
+            <img class="footer__social-icon" src="images/yt.svg" alt="Ссылка ютуб"/>
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a href="#0" class="footer__social-link">
+            <img class="footer__social-icon" src="images/vk.svg" alt="Ссылка ютуб"/>
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a href="#0" class="footer__social-link">
+            <img class="footer__social-icon" src="images/pinterest.svg" alt="Ссылка ютуб"/>
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
