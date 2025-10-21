@@ -58,7 +58,7 @@
   position: relative;
   background-image: url(../images/cover.jpg);
   background-size: cover;
-  background-position: center;  
+  background-position: center;
   background-repeat: no-repeat;
   min-height: 757px;
   padding: 165px 50px 50px;
@@ -186,7 +186,7 @@
 .lots__look-more-link {
   margin-left: 64px;
   font-weight: 400;
-  font-size: 20px; 
+  font-size: 20px;
 }
 
 .about {
@@ -220,7 +220,7 @@
 .about__column {
   display: flex;
   flex-direction: column;
-  height: 100%; 
+  height: 100%;
   width: 100%;
 }
 
