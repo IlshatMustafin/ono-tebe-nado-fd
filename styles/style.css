@@ -101,7 +101,7 @@
   font-size: 22px;
   text-transform: uppercase;
   word-spacing: 19px;
-  z-index: 51;
+  z-index: 50;
 }
 
 .bet-button {
@@ -141,31 +141,20 @@
   min-height: 596px;
 }
 
-.carda {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  color: white;
-  padding: 48px 40px;
-}
-
-.lots__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  color: white;
-  padding: 48px 40px;
+.card-link {
+  text-decoration: none;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   background-size: cover;
   background-position: center;
+  height: 100%;
+  color: white;
+  padding: 48px 40px;
 }
 
 .card_type_film {
